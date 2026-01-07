@@ -1,0 +1,6 @@
+@amq_consumer_HostAddress = http://localhost:5230
+
+GET {{amq_consumer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
