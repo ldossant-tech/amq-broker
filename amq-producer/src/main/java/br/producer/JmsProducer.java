@@ -2,23 +2,21 @@ package br.producer;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
-import jakarta.jms.ConnectionFactory;
 import jakarta.jms.JMSContext;
 import jakarta.jms.Queue;
-import jakarta.annotation.Resource;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 @ApplicationScoped
 public class JmsProducer {
 
     @Inject
-    ConnectionFactory connectionFactory;
+    JMSContext context;
 
-    @Resource(lookup = "messages")
-    Queue messages;
+    @ConfigProperty(name = "amq.queue.name")
+    String queueName;
 
     public void send(String payload) {
-        try (JMSContext context = connectionFactory.createContext()) {
-            context.createProducer().send(messages, payload);
-        }
+        Queue queue = context.createQueue(queueName);
+        context.createProducer().send(queue, payload);
     }
 }
