@@ -4,6 +4,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.jms.JMSContext;
 import jakarta.jms.Queue;
+import jakarta.annotation.Resource;
 
 @ApplicationScoped
 public class JmsProducer {
@@ -11,8 +12,8 @@ public class JmsProducer {
     @Inject
     JMSContext context;
 
-    @Inject
-    Queue messages; // nome vem do application.properties
+    @Resource(lookup = "messages")
+    Queue messages;
 
     public void send(String payload) {
         context.createProducer().send(messages, payload);
