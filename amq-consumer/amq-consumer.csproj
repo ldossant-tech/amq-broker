@@ -1,15 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>amq_consumer</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.0" />
+    <!-- ActiveMQ / AMQ Broker (OpenWire) -->
+    <PackageReference Include="Apache.NMS" Version="2.0.0" />
+    <PackageReference Include="Apache.NMS.ActiveMQ" Version="2.0.0" />
+
+    <!-- Swagger / OpenAPI (compatível com .NET 8) -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
 </Project>

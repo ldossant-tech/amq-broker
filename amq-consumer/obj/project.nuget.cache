@@ -1,16 +1,37 @@
 {
   "version": 2,
-  "dgSpecHash": "bCgQ8AQDMeY=",
+  "dgSpecHash": "POuDMc/OYBU=",
   "success": true,
-  "projectFilePath": "/Users/ldossant/amq-consumer/amq-consumer.csproj",
+  "projectFilePath": "/Users/ldossant/amq-broker/amq-consumer/amq-consumer.csproj",
   "expectedPackageFiles": [
-    "/Users/ldossant/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
-    "/Users/ldossant/.nuget/packages/microsoft.extensions.apidescription.server/10.0.0/microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
-    "/Users/ldossant/.nuget/packages/microsoft.openapi/2.3.0/microsoft.openapi.2.3.0.nupkg.sha512",
-    "/Users/ldossant/.nuget/packages/swashbuckle.aspnetcore/10.1.0/swashbuckle.aspnetcore.10.1.0.nupkg.sha512",
-    "/Users/ldossant/.nuget/packages/swashbuckle.aspnetcore.swagger/10.1.0/swashbuckle.aspnetcore.swagger.10.1.0.nupkg.sha512",
-    "/Users/ldossant/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.1.0/swashbuckle.aspnetcore.swaggergen.10.1.0.nupkg.sha512",
-    "/Users/ldossant/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.1.0/swashbuckle.aspnetcore.swaggerui.10.1.0.nupkg.sha512"
+    "/Users/ldossant/.nuget/packages/apache.nms/2.0.0/apache.nms.2.0.0.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/apache.nms.activemq/2.0.0/apache.nms.activemq.2.0.0.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/microsoft.netcore.platforms/1.1.1/microsoft.netcore.platforms.1.1.1.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/microsoft.netcore.targets/1.1.3/microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/sharpziplib/1.3.3/sharpziplib.1.3.3.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/system.runtime/4.3.1/system.runtime.4.3.1.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "/Users/ldossant/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.22/microsoft.netcore.app.host.osx-arm64.8.0.22.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "message": "Package 'Apache.NMS.ActiveMQ' 2.0.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-9g64-r942-fvmp",
+      "projectPath": "/Users/ldossant/amq-broker/amq-consumer/amq-consumer.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/ldossant/amq-broker/amq-consumer/amq-consumer.csproj",
+      "libraryId": "Apache.NMS.ActiveMQ",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
